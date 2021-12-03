@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">First Name</ion-label>
+    <ion-input type="text" [formControl]= "firstname"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Last Name</ion-label>
+    <ion-input type= "text" [formControl]= "lastname "></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Birth Date</ion-label>
+    <ion-input type= "text" [formControl]= "birthdate "></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Birth Place</ion-label>
+    <ion-input type="text" [formControl]=  "birthplace"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Email</ion-label>
+    <ion-input type= "text" [formControl]= "email "></ion-input>
+  </ion-item>
+
+  {{ firstname.value }} <br>
+  {{ lastname.value }} <br>
+  {{ birthdate.value }} <br>
+  {{ birthplace.value }} <br>
+  {{ email.value }} <br>
+
+
+</ion-content>
